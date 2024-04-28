@@ -1,4 +1,10 @@
 {
+    "rewrites": [
+        {
+            "source": "/(.*)",
+            "destination": "/"
+        }
+    ],
     "builds": [
         {
             "src": "GFresh/wsgi.py",
@@ -13,12 +19,6 @@
         {
             "src": "/(.*)",
             "dest": "GFresh/wsgi.py"
-        }
-    ],
-    "rewrites": [
-        {
-            "source": "/(.*)",
-            "destination": "/"
         }
     ]
 }
